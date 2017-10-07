@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title></title>
+<style>
+span{float:left;height:100%}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(function () { 
+  $( "input:file" ).on('change', function (event) {
+	  $('#fileContentList').empty();
+	  for (var i = 0; i < event.target.files.length; i++) {
+	    var file = event.target.files[i];
+        
+		if (file) {			
+		  var r = new FileReader();
+		  r.file = file;
+		  r.readAsDataURL(file);	
+		  r.onload = function(e) {	
+			var contents = e.target.result;	
+			var thisfile = this.file;
+		//	 $('#fileContentList').append("<span>檔名: " + thisfile.name + "<br>檔案類型: " + thisfile.type 
+		// 	+ "<br>檔案大小: " + thisfile.size + " bytes<br><img src='"+contents+"'></span>");
+			$('#fileContentList').append("<span>檔名: " + thisfile.name + "<br>檔案類型: " + thisfile.type 
+		 	+ "<br>檔案大小: " + thisfile.size + " bytes<br><iframe src='"+thisfile.name+"'></span>");
+			   
+              }
+		} else {
+		  alert("選取檔案失敗");
+		}
+	  }
+ });
+
+})
+</script>  
+</head>
+<body>
+<div id="outline">
+<h1>選取檔案</h1>
+	<!-- <input type="file"  multiple="multiple"  accept="image/*" />-->
+   
+     <input type="file" accept="application/htm" />
+    <div id="fileContentList"></div> 
+</div>
+</body>
+</html>

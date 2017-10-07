@@ -1,0 +1,108 @@
+body{
+	margin:0px;padding:0;
+	font-family:Arial, Helvetica,  sans-serif,微軟正黑體;
+	cursor:url(images/my.cur),url(images/my.png),auto;          /*改變滑鼠游標*/
+	background-image: url('images/bg.jpg');    /*加入網頁背景圖*/
+	background-attachment:fixed;            /*設定背景圖為固定式*/
+
+}
+#main{
+	margin: 0 auto;
+	border:0px #330000 solid; 
+	width:800px;
+	height:auto;
+}
+header{
+	border:1px #330000 solid;
+	width:800px;
+	height:80px;
+	background:#330000;
+}
+aside{
+	width:170px;
+	float: left;
+	height:400px;
+   /*	background: url(images/bg_lt.png) no-repeat; */
+   background: url(images/imag3.jpg) no-repeat; 
+}
+nav{             /*nav區塊格式*/
+	border:0px #000000 solid;
+	margin: 0px auto;padding:0px;
+	margin-top:70px;
+}
+nav ul {
+	list-style:none;        /*不顯示清單項目符號*/
+	margin:0;padding:0; 
+}
+
+nav li a {
+	display:block; 
+	width:150px; 
+	height:42px; 
+	background-image:url(images/btn.png);  /*超連結原始狀態背景圖*/
+   /* background-image:url(images/imag3.jpg);  /*超連結原始狀態背景圖*/*/
+    line-height:35px; 
+	text-indent:45px; 
+	text-decoration:none;    /*不顯示底線*/
+	color:#333333;
+	font-size:15px;
+}
+nav li a:hover {
+	/* background-image:url(images/btn_hover.png); /*滑鼠移到連結時背景圖*/ */
+	/*color:#ffffff; */
+}
+h1#text1{
+	margin:0px;padding:0px;
+	top:15px;
+	position:absolute;     /*設定div為絕對定位*/
+	font-size:40px;       /*字高*/
+	color:#FF0000;       /*字的顏色*/
+	margin-left:50px;          /*與元件水平距離*/
+}
+
+h1#text2{
+	margin:0px;padding:5px;
+	position:absolute;
+	font-size:30px;
+	color:#FFFFFF;
+	top:30px;
+	margin-left:150px;
+	filter:glow(color=#ff0000, strength=5);   /*設定光暈濾鏡*/
+	text-shadow: 5px 5px 5px #FF0000;
+}
+article{
+	border-right:1px #330000 solid;
+	width:625px;
+	margin-left:175px;
+	height:400px;
+	background:#FFFFFF;
+}
+.consection{
+	border:0px #330000 solid;
+	width:400px;
+	left:10px;top:10px;
+	margin:0px auto;padding:20px;
+}
+fieldset{
+	border:1px solid;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+fieldset legend{
+	text-align:center; 
+}
+img{
+	margin:3px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border:2px solid;}
+footer{
+	border:1px #330000 solid;
+	background:#330000;
+	color:#ffffff;
+	width:800px;height:50px;
+	text-align:center;
+	line-height:50px;
+}

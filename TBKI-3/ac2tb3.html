@@ -1,0 +1,100 @@
+      
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 徐師高中數學</title>
+<meta name="Descroption" content="天文與曆法資料引用www.bieyu.com">
+<meta name=keywords content="亂數表卦象;萬年曆;紫微斗數;易經八卦;陽宅風水 ;高中數學;農(陽)曆;節氣;天干地支;生肖;徐其堂老師休閒園地">
+<link rel="stylesheet" href="jquery.mobile-1.4.0.min.css">
+<script src="jquery-1.9.1.min.js"></script>
+<script src="jquery.mobile-1.4.0.min.js"></script>
+
+  
+<script>
+     function cald() {
+       //Sub LinkButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        //   '' Dim LKGunar = Tcalendar(KGyern, KGmohn, KGdatn)
+        // Dim YNUMm = YNUM.SelectedItem.Text
+        //  var opd = document.form14_1_2.opd1;
+      //  var YYNUM = parseInt(opd.value);
+       var opd = document.form14_1_2.opd1;
+       var YYNUM = String(opd.value);
+     //  opd = document.form14_1_2.opd2;
+     //   var MMNUM = String(opd.value);
+     //   opd = document.form14_1_2.opd3;
+     //   var DDNUM = String(opd.value);
+        /////////////////////   
+       var film =YYNUM+".htm";
+        //var film = "B3-1-3"+".htm";
+    	//$('#datt').append("<span>檔名: "  + " <iframe src='"+"B3-1-3.htm"+"'></span>");
+		//$('#datt').append("<span>檔名: "  + " <iframe src='"+film+"'></span>");
+       //  $('#datt').html("<span>檔名: "  + " <iframe src='"+film+"'></span>");
+		 $('span').empty();
+       //  $('#datt').html("<span>檔名: "  + " <iframe src='"+film+"' width = '"+450+"'></span>");
+		  $('#datt').html("檔名: "  + " <iframe src='"+film+"' width = '"+450+"'>");
+		// $('#datt').html("選取檔案"+contents); 
+        // alert("選取檔案SUCEED");
+
+    };
+    ///////////////////////////////////////////////////////////
+ </script>
+ 
+</head>
+<body>
+  
+<div data-role="page" id="home">
+   
+     <div data-role="header">
+  <h1> 歡迎免費使用參考 </h1>
+  </div>
+  <div data-role="content">
+     <div id="main_content">
+   <span> <iframe src="TBKI-3H.htm" width="450" ></iframe></span>
+  	<!--  <h2>@徐師威力彩程式@[產生(6+1)數取合日卦者]</h2>-->
+       <!--  <h2>@徐師簡易八字表 </h2>
+      <h3>[請依序輸入農曆西元年'月'日'閏月否'時'性別]</h3>-->
+       <h3>[請輸入章節]</h3>
+      </div>
+	<form action="" data-ajax="false" id="form14_1_2" name="form14_1_2">
+      <div data-role="fieldcontain">
+       <label for="opd1">請選章節數碼： </label>
+         <!--<input type="text" name="opd1" id="opd1"
+               value=" " data-mini="true"/>-->
+          <select name="opd1" id="opd1">
+             <option>B3-1-1</option>
+             <option>B3-1-2</option>
+             <option>B3-1-3</option>
+              <option>B3-1-4</option>
+              <option>B3-1-5</option>
+              <option>B3-2-1</option>
+              <option>B3-2-2</option>
+              <option>B3-2-3</option>
+              <option>B3-2-4</option>
+              <option>B3-2-5</option>
+              <option>B3-3-1</option>
+              <option>B3-3-2</option>
+              <option>B3-3-3</option>
+              <option>B3-4-1</option>
+              <option>B3-4-2</option>
+              <option>B3-4-3</option>
+              <option>B3-4-4</option>
+          </select>
+                 
+       </div>
+     
+       
+         <!-- <a href="#" data-role="button" onclick="cal();"
+         data-inline="true" data-mini="true">計算</a> -->
+        <a href="#" data-role="button" onclick="cald();"
+         data-inline="true" data-mini="true">請按顯示</a>   
+      <!--  <input type="submit" value="排算 ">-->
+    </form>
+    <div id="output"></div>
+    <div id="datt"></div>
+  </div>
+</div>
+  
+ </body>
+</html>

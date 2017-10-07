@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+   <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>徐其堂老師休閒園地;(高中數學....) </title>
+ <META  name=keywords content="徐其堂老師休閒園地;萬年曆;紫微斗數;易經八卦;陽宅風水 ;高中數學;農(陽)曆;月曆;曆法;節日;紀念日;節氣;天干地支;生肖">
+<link rel=stylesheet type="text/css" href="color-3.css">
+<script src="jquery-1.9.1.min.js"></script>
+
+<script>
+     function cald() {
+       //Sub LinkButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        //   '' Dim LKGunar = Tcalendar(KGyern, KGmohn, KGdatn)
+        // Dim YNUMm = YNUM.SelectedItem.Text
+        //  var opd = document.form14_1_2.opd1;
+      //  var YYNUM = parseInt(opd.value);
+       var opd = document.form14_1_2.opd1;
+       var YYNUM = String(opd.value);
+      
+        /////////////////////   
+       var film =YYNUM+".htm";
+        //var film = "B3-1-3"+".htm";
+     $('span').empty();
+       //  $('#datt').html("<span>檔名: "  + " <iframe src='"+film+"' width = '"+450+"'></span>");
+	// $('#datt').html(""  + " <iframe src='"+film+"' width = '"+600+"'>");
+	 $('#datt').html(""  + " <iframe src='"+film+"' width = '"+560+"' height = '"+368+"'>");
+	
+        // $('#datt').html("選取檔案"+contents); 
+        // alert("選取檔案SUCEED");
+
+    };
+    ///////////////////////////////////////////////////////////
+  </script>
+ </head>
+ <body>
+
+<div id="main">
+<!--標題-->
+	<header>
+		<h1 id="text1">徐老師網站(高中數學)</h1>
+		<h1 id="text2">徐老師網站(高中數學)</h1>
+	</header>
+	<!--左方區塊-->
+	<aside>
+	  <div>
+      <form action=""  id="form14_1_2" name="form14_1_2">
+         <label for="opd1">第一數碼(西元)： </label>
+         <!--<input type="text" name="opd1" id="opd1"
+               value=" " data-mini="true"/>-->
+          <select name="opd1" id="opd1" >
+             <option>B1-1-1</option>
+             <option>B1-1-2</option>
+             <option>B1-1-3</option>
+              <option>B1-1-4</option>
+              <option>B1-1-5</option>
+              <option>B1-2-1</option>
+              <option>B1-2-2</option>
+              <option>B1-2-3</option>
+              <option>B1-2-4</option>
+              <option>B1-2-5</option>
+            </select>
+          <!-- <a href="#" data-role="button" onclick="cal();"
+         data-inline="true" data-mini="true">計算</a> -->
+        <a href="#" data-role="button" onclick="cald();"
+         data-inline="true" data-mini="true">排算</a>   
+      <!--  <input type="submit" value="排算 ">-->
+     </form>
+      <!-- <div id="datt"></div>-->
+    </div>
+      <nav>
+		<ul>
+		    <li><a href="TBKI-3/ac2tb3.html">第三冊</a></li>
+			<li><a href="htmlpg2.html">易經卜卦</a></li>
+         <!--<li><a href="Ent8989.aspx">簡易八字</a></li>-->
+            <li><a href="http://114.33.240.165/">育樂園地</a></li>  
+            <li><a href="http://tech1206.myweb.hinet.net/">重點講義</a></li> 
+            <!-- <li><a href="http://hsutech1206.appspot.com/">育樂園地</a></li>
+		       <li><a href="http://elite.fhsh.khc.edu.tw/">數學天地</a></li>-->
+			<li><a href="http://ms.ho.net.tw/">休閒園地</a></li>	
+		<!-- <li><a href="message.htm">留言板</a></li>		-->
+		
+        </ul>
+           
+        
+		</nav>
+	</aside>
+	<!--主內容-->
+	<article>
+	   <span>
+      <iframe src="TBKI-1H.htm" width="625" height="398"></iframe>
+	  </span>
+      <div id="datt"></div>
+    </article>
+	<!--頁尾-->
+	<footer>歡迎光臨我的網站!!聯絡請EMAIL: tech.t1206@gmail.com</footer>
+</div>
+</body>
+</html>

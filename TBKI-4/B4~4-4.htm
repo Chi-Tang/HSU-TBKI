@@ -1,0 +1,1819 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./B4~4-4.files/filelist.xml">
+<link rel=Edit-Time-Data href="./B4~4-4.files/editdata.mso">
+<link rel=OLE-Object-Data href="./B4~4-4.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>3—4標準差與四分位差</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>abc</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>SHU</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>67</o:TotalTime>
+  <o:Created>2005-11-06T10:14:00Z</o:Created>
+  <o:LastSaved>2005-11-06T10:17:00Z</o:LastSaved>
+  <o:Pages>12</o:Pages>
+  <o:Words>335</o:Words>
+  <o:Characters>1915</o:Characters>
+  <o:Company>abc co.</o:Company>
+  <o:Lines>15</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2351</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:細明體;
+	panose-1:2 2 3 9 0 0 0 0 0 0;
+	mso-font-alt:MingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@細明體";
+	panose-1:2 2 3 9 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:新細明體;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-next:內文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:normal;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:細明體;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:21.0cm 842.0pt;
+	margin:2.0cm 42.55pt 2.0cm 42.55pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:42.55pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:198708490;
+	mso-list-type:simple;
+	mso-list-template-ids:-858782898;}
+@list l0:level1
+	{mso-level-text:（%1）;
+	mso-level-tab-stop:35.25pt;
+	mso-level-number-position:left;
+	margin-left:35.25pt;
+	text-indent:-35.25pt;}
+@list l1
+	{mso-list-id:714887622;
+	mso-list-type:simple;
+	mso-list-template-ids:-709316858;}
+@list l1:level1
+	{mso-level-number-format:ideograph-traditional;
+	mso-level-text:【%1】;
+	mso-level-tab-stop:42.75pt;
+	mso-level-number-position:left;
+	margin-left:42.75pt;
+	text-indent:-42.75pt;}
+@list l2
+	{mso-list-id:1177885275;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1643718344 -261215244 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-ansi-font-weight:bold;}
+@list l3
+	{mso-list-id:1572890775;
+	mso-list-type:simple;
+	mso-list-template-ids:1333568186;}
+@list l3:level1
+	{mso-level-text:（%1）;
+	mso-level-tab-stop:35.25pt;
+	mso-level-number-position:left;
+	margin-left:35.25pt;
+	text-indent:-35.25pt;}
+@list l4
+	{mso-list-id:1795102957;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1056450894 -1063236874 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-ansi-font-weight:bold;}
+@list l5
+	{mso-list-id:2024242481;
+	mso-list-type:hybrid;
+	mso-list-template-ids:615032314 877681152 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-TW style='tab-interval:24.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>4</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>—<span lang=EN-US>4標準差與四分位差<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>【前言】用來衡量群體內各數間差異情形的量數稱為差異數或差量。常用方法有三：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:42.75pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-42.75pt;mso-list:l1 level1 lfo1;tab-stops:list 42.75pt'><![if !supportLists]><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>【甲】</span><![endif]><!--[if gte vml 1]><o:wrapblock><v:shapetype
+  id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+  path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+  left:0;text-align:left;margin-left:0;margin-top:0;width:8.65pt;height:8.65pt;
+  z-index:1' o:allowincell="f">
+  <v:imagedata src="./B4~4-4.files/image001.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSGraph.Chart.8"
+  ShapeID="_x0000_s1026" DrawAspect="Content" ObjectID="_1192806309">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><img width=12 height=12
+ src="./B4~4-4.files/image002.gif" v:shapes="_x0000_s1026"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>全距：一群數值中，最大數與最小數之差，以</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>R</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>表示：</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.25pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-35.25pt;mso-list:l0 level1 lfo2;tab-stops:list 35.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（1）</span><![endif]><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由未分組求</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>R:R=X</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>n</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>X</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>1</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.25pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-35.25pt;mso-list:l0 level1 lfo2;tab-stops:list 35.25pt'><![if !supportLists]><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（2）</span><![endif]><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由以分組求</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>R:R=U</span><span
+lang=EN-US style='font-size:10.0pt'>n</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>－</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>L</span><span lang=EN-US
+style='font-size:10.0pt'>1</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:42.75pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-42.75pt;mso-list:l1 level1 lfo1;tab-stops:list 42.75pt'><![if !supportLists]><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>【乙】</span><![endif]><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="_x0000_s1027" type="#_x0000_t75" style='position:absolute;left:0;
+  text-align:left;margin-left:0;margin-top:0;width:9pt;height:17pt;z-index:2'
+  o:allowincell="f">
+  <v:imagedata src="./B4~4-4.files/image003.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><v:shape id="_x0000_s1029" type="#_x0000_t75" style='position:absolute;
+  left:0;text-align:left;margin-left:0;margin-top:0;width:9pt;height:17pt;
+  z-index:3' o:allowincell="f">
+  <v:imagedata src="./B4~4-4.files/image003.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+  ShapeID="_x0000_s1027" DrawAspect="Content" ObjectID="_1192806310">
+ </o:OLEObject>
+ <![endif]><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+  ShapeID="_x0000_s1029" DrawAspect="Content" ObjectID="_1192806311">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><img width=12 height=23
+ src="./B4~4-4.files/image004.gif" v:shapes="_x0000_s1027 _x0000_s1029"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>四分位差</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>;</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>就是第</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>3</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>四分位數（</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Q3</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）與第</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>1</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>四分位數（</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Q1</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）之差的二分之一，以</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Q</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>D</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>表示，即</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>QD= </span><sub><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
+ style='width:63.75pt;height:30.75pt'>
+ <v:imagedata src="./B4~4-4.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=85 height=41
+src="./B4~4-4.files/image006.gif" v:shapes="_x0000_i1025"><![endif]></span></sub><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><span
+style="mso-spacerun: yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>【</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>P.S</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>】第</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>3</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>四分位數（</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Q3</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）：比中位數大之資料的中位數，第一四分位數（</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Q1</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）：比中位數之資料小的中位數。</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>12</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>P.132<o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 1.4pt 0cm 1.4pt'>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>自修時數</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>甲校</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>乙校</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>6</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>9<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>4<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>9</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>12<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>6<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>12</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>15<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>8<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>9<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>15</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>18<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>12<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>9<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>18</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>21<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>24<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>12<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>21</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>24<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>15<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>9<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>24</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>27<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>7<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>8<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>27</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>30<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>2<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>8<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>30</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>33<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>3<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>33</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+  font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>～</span><span lang=EN-US style='font-size:14.0pt;
+  mso-bidi-font-size:10.0pt'>36<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>2<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=130 valign=top style='width:97.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>計</span><span
+  lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>70<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+  10.0pt'>70<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求甲、乙全距</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'><span style="mso-spacerun: yes">&nbsp;</span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>甲：</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>36</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>9=27hr , </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>乙：</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>36</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>6=30hr<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:35.25pt;text-indent:-35.25pt;mso-list:
+l3 level1 lfo3;tab-stops:list 35.25pt'><![if !supportLists]><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（1）</span><![endif]><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由未分組求</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Q</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>D</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>將</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>n</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>個數值案大小排列：</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>x</span><span style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt'>1</span><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>≦</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>x</span><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt'>2</span><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>≦…≦</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>x</span><span style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt'>n</span><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>則不論</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>n=2m</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（偶）或</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>n=2m+1</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（奇）</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo4;
+tab-stops:list 18.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>當</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>m=2k+1</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（奇）時，</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>Q1=X</span><span style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt'>K+1</span><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>、</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>Q3=X</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>n</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>k</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:14.0pt;mso-char-indent-count:1.0;
+mso-char-indent-size:14.0pt'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>則</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>Q</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>、</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>D= <sub><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:12pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=41
+src="./B4~4-4.files/image008.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1192806312">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>〔<span lang=EN-US>X（n</span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>k</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>）</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>x</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>k+1</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>〕<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1056"
+  type="#_x0000_t75" style='position:absolute;margin-left:6pt;margin-top:0;
+  width:354pt;height:205.85pt;z-index:11;visibility:visible;mso-wrap-edited:f'
+  o:allowincell="f">
+  <v:imagedata src="./B4~4-4.files/image009.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Word.Picture.8"
+  ShapeID="_x0000_s1056" DrawAspect="Content" ObjectID="_1192806313">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0 align=left>
+  <tr>
+   <td width=8 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=472 height=274 src="./B4~4-4.files/image010.gif" v:shapes="_x0000_s1056"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+新細明體;mso-hansi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<br style='mso-ignore:vglayout' clear=ALL>
+
+<p class=MsoNormal><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1057"
+  type="#_x0000_t75" style='position:absolute;margin-left:-6pt;margin-top:0;
+  width:312pt;height:181.05pt;z-index:12;visibility:visible;mso-wrap-edited:f'>
+  <v:imagedata src="./B4~4-4.files/image011.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Word.Picture.8"
+  ShapeID="_x0000_s1057" DrawAspect="Content" ObjectID="_1192806314">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+ relative;z-index:4;left:-8px;top:0px;width:416px;height:241px'><img width=416
+ height=241 src="./B4~4-4.files/image012.gif" v:shapes="_x0000_s1057"></span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+新細明體;mso-hansi-font-family:"Times New Roman"'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo4;
+tab-stops:list 18.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>m=2k<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>Q1=<span style="mso-spacerun: yes">&nbsp; </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:12pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=41
+src="./B4~4-4.files/image013.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1192806315">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>〔<span lang=EN-US>X</span></span><span
+lang=EN-US style='font-size:10.0pt'>k </span><span lang=EN-US style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt'>+</span><span lang=EN-US style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>X</span><span
+lang=EN-US style='font-size:10.0pt'>k+1</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>〕<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>Q3= <sub><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:12pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=41
+src="./B4~4-4.files/image014.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1192806316">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>〔<span lang=EN-US>X</span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>n</span><span
+style='font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>－</span><span lang=EN-US
+style='font-size:10.0pt'>k </span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>+</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>X</span><span
+lang=EN-US style='font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>n</span><span
+style='font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>－</span><span lang=EN-US
+style='font-size:10.0pt'>k+1</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>〕<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>QD=<span
+style="mso-spacerun: yes">&nbsp; </span></span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:12pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=41
+src="./B4~4-4.files/image015.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1192806317">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>〔<span lang=EN-US>Q3</span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-hansi-font-family:"Times New Roman"'>Q1〕=<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:12pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image016.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=41
+src="./B4~4-4.files/image017.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1192806318">
+ </o:OLEObject>
+</xml><![endif]--> 〔X</span><span lang=EN-US style='font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>n</span><span
+style='font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>－</span><span lang=EN-US
+style='font-size:10.0pt'>k </span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>+</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>X</span><span
+lang=EN-US style='font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>n</span><span
+style='font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>－</span><span lang=EN-US
+style='font-size:10.0pt'>k+1</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'> X</span><span
+lang=EN-US style='font-size:10.0pt'>k</span><span lang=EN-US style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt'> </span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>－</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>X</span><span lang=EN-US style='font-size:10.0pt'>k+1</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>〕<span lang=EN-US><span style="mso-spacerun: yes">&nbsp;
+</span><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>（<span lang=EN-US>13）P.135<span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>ex2.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'><span
+style="mso-spacerun: yes">&nbsp;</span>2、15、16、17、17、18、18、18、19、19、72、100之QD及全距<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>n=12∴m=6、k=3<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>QD= <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:12pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image018.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=41
+src="./B4~4-4.files/image019.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1192806319">
+ </o:OLEObject>
+</xml><![endif]-->〔X</span><span style='font-size:10.0pt;font-family:新細明體;
+mso-hansi-font-family:"Times New Roman"'>（<span lang=EN-US>P）+</span></span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;
+mso-hansi-font-family:"Times New Roman"'>X</span><span style='font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>（<span lang=EN-US>10）</span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>X</span><span
+style='font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（</span><span lang=EN-US
+style='font-size:10.0pt'>3</span><span style='font-size:10.0pt;font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>X</span><span
+style='font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（</span><span lang=EN-US
+style='font-size:10.0pt'>4</span><span style='font-size:10.0pt;font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>〕<span lang=EN-US>=1.25<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>全距<span lang=EN-US>=X</span></span><span
+style='font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>（<span
+lang=EN-US>12）</span></span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>X</span><span style='font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><span
+lang=EN-US style='font-size:10.0pt'>1</span><span style='font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>=98<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'><span
+style="mso-spacerun: yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US>(2)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由已分組求</span><span
+lang=EN-US>Q , D</span></b><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1055" type="#_x0000_t202" style='position:absolute;
+ margin-left:257.05pt;margin-top:11.7pt;width:3in;height:171pt;z-index:10;
+ mso-position-horizontal:absolute;mso-position-vertical:absolute'
+ strokecolor="white"/><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:6;margin-left:343px;margin-top:16px;width:291px;
+height:231px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=291 height=231 align=left valign=top bgcolor=white
+  style='border:.75pt solid white;vertical-align:top;background:white'><![endif]><![if !mso]><span
+  style='position:absolute;z-index:10'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1055" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+     border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 1.4pt 0cm 1.4pt'>
+     <tr style='height:26.25pt'>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:26.25pt'>
+      <p class=MsoNormal><span style="mso-spacerun: yes">&nbsp;</span><span
+      style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+      mso-hansi-font-family:"Times New Roman"'>組</span><span lang=EN-US><span
+      style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+      style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+      mso-hansi-font-family:"Times New Roman"'>別</span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+      height:26.25pt'>
+      <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+      yes">&nbsp;</span></span><span style='font-family:新細明體;mso-ascii-font-family:
+      "Times New Roman";mso-hansi-font-family:"Times New Roman"'>次</span><span
+      lang=EN-US><span style="mso-spacerun: yes">&nbsp; </span></span><span
+      style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+      mso-hansi-font-family:"Times New Roman"'>數</span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+      height:26.25pt'>
+      <p class=MsoNormal style='text-indent:12.0pt;mso-char-indent-count:1.0;
+      mso-char-indent-size:12.0pt'><span style='font-family:新細明體;mso-ascii-font-family:
+      "Times New Roman";mso-hansi-font-family:"Times New Roman"'>以下累積次數</span></p>
+      </td>
+     </tr>
+     <tr style='height:22.55pt'>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+      height:22.55pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'>L<sub>1</sub>~U<sub>1</sub><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:22.55pt'>
+      <h1><span lang=EN-US><span style="mso-spacerun: yes">&nbsp;</span>f<sub>1</sub></span></h1>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:22.55pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'>C<sub>1</sub>=f<sub>1</sub><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='height:17.4pt'>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+      height:17.4pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'>L<sub>2</sub>~U<sub>2</sub><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:17.4pt'>
+      <p class=MsoNormal style='text-indent:14.0pt;mso-char-indent-count:1.0;
+      mso-char-indent-size:14.0pt'><span lang=EN-US style='font-size:14.0pt;
+      mso-bidi-font-size:10.0pt'>f<sub>2</sub><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:17.4pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'>C<sub>2</sub>=f<sub>1</sub>+f<sub>2</sub><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='height:26.2pt'>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+      height:26.2pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'><span style="mso-spacerun: yes">&nbsp; </span>`<o:p></o:p></span></p>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'><span style="mso-spacerun: yes">&nbsp; </span>`<o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:26.2pt'>
+      <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+      lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:26.2pt'>
+      <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+      lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='height:27.6pt'>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+      height:27.6pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'>L<sub>i-1</sub>~U<sub>i-1</sub><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:27.6pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'><span style="mso-spacerun: yes">&nbsp; </span>f<sub>i-1</sub><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:27.6pt'>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'>c<sub>i-1</sub>=f<sub>1</sub>+f<sub>2</sub>+<o:p></o:p></span></p>
+      <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+      10.0pt'><span style="mso-spacerun: yes">&nbsp;</span>…..+fi<sub>-1</sub><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='height:32.35pt'>
+      <td width=90 valign=top style='width:67.2pt;border:solid windowtext .5pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+      height:32.35pt'>
+      <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+      lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:32.35pt'>
+      <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+      lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+      </td>
+      <td width=90 valign=top style='width:67.2pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      padding:0cm 1.4pt 0cm 1.4pt;height:32.35pt'>
+      <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+      lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+    10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>得分配表</span><span lang=EN-US> </span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US>[</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>丙</span><span
+lang=EN-US>]</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>標準差</span><span lang=EN-US> [</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>離均差、變異數</span><span lang=EN-US>]<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1037"
+  type="#_x0000_t75" style='position:absolute;margin-left:0;margin-top:0;
+  width:9pt;height:17pt;z-index:4' o:allowincell="f">
+  <v:imagedata src="./B4~4-4.files/image003.wmz" o:title=""/>
+  <v:textbox style='mso-next-textbox:#_x0000_s1037'/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+  ShapeID="_x0000_s1037" DrawAspect="Content" ObjectID="_1192806320">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><img width=12 height=23
+ src="./B4~4-4.files/image020.gif" v:shapes="_x0000_s1037"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<b style='mso-bidi-font-weight:normal'><span lang=EN-US>[1]</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>定義：</span><span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 18.0pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b style='mso-bidi-font-weight:normal'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>離均差</span></b><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：一群數值中個項數值</span><span
+lang=EN-US>(Xi)</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>與算數平均數</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:14.25pt;height:15.75pt'
+ o:ole="">
+ <v:imagedata src="./B4~4-4.files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=19 height=21
+src="./B4~4-4.files/image022.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1192806321">
+ </o:OLEObject>
+</xml><![endif]--> </span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>之差</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 18.0pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b style='mso-bidi-font-weight:normal'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>變異數</span></b><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：以算數平均數</span><span
+lang=EN-US><sub><!--[if gte vml 1]><v:shape id="_x0000_i1042" type="#_x0000_t75"
+ style='width:14.25pt;height:15.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=19 height=21
+src="./B4~4-4.files/image023.gif" v:shapes="_x0000_i1042"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1192806322">
+ </o:OLEObject>
+</xml><![endif]--> </span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為中心求各項數值與平均數</span><span
+lang=EN-US><sub><!--[if gte vml 1]><v:shape id="_x0000_i1043" type="#_x0000_t75"
+ style='width:14.25pt;height:15.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=19 height=21
+src="./B4~4-4.files/image024.gif" v:shapes="_x0000_i1043"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1192806323">
+ </o:OLEObject>
+</xml><![endif]--> </span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>差之平方數的平均數</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span><sub><!--[if gte vml 1]><v:shape id="_x0000_i1049"
+ type="#_x0000_t75" style='width:95.25pt;height:33.75pt' o:ole="">
+ <v:imagedata src="./B4~4-4.files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=127 height=45
+src="./B4~4-4.files/image026.gif" v:shapes="_x0000_i1049"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1192806324">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US>[2]</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>計算方法：</span><span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US>1.</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由未分組資料求</span><span
+lang=EN-US>S</span></b><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：設</span><span
+lang=EN-US>n</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>個數值　</span><span lang=EN-US>x<sub>1 </sub>,
+x<sub>2</sub> ,x<sub>3</sub> ,……..x<sub>n </sub></span><!--[if gte vml 1]><v:shape
+ id="_x0000_s1062" type="#_x0000_t75" style='position:absolute;margin-left:0;
+ margin-top:0;width:96.95pt;height:40pt;z-index:-1;mso-wrap-edited:f;
+ mso-position-horizontal:left;mso-position-horizontal-relative:text;
+ mso-position-vertical:top;mso-position-vertical-relative:line' wrapcoords="5876 2853 3335 5706 476 9374 318 13042 2382 15894 4924 15894 5241 19970 5876 19970 10800 19562 10959 16302 15247 15894 20012 13449 19694 9374 20329 2853 5876 2853"
+ o:allowoverlap="f">
+ <v:imagedata src="./B4~4-4.files/image027.wmz" o:title=""/>
+ <v:textbox style='mso-next-textbox:#_x0000_s1062'/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+ ShapeID="_x0000_s1062" DrawAspect="Content" ObjectID="_1192806325">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=129 height=53
+src="./B4~4-4.files/image028.gif" align=left hspace=12 v:shapes="_x0000_s1062"><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>則其標準差</span> <span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1113" type="#_x0000_t75" style='width:96.75pt;height:38.25pt'
+ o:ole="">
+ <v:imagedata src="./B4~4-4.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=129 height=51
+src="./B4~4-4.files/image030.gif" v:shapes="_x0000_i1113"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1113"
+  DrawAspect="Content" ObjectID="_1192806326">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>或</span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal><span lang=EN-US>ex3</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:54.8pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid black .5pt;
+ mso-padding-alt:0cm 1.4pt 0cm 1.4pt'>
+ <tr style='height:13.5pt'>
+  <td width=81 valign=top style='width:60.75pt;border:solid black .5pt;
+  padding:0cm 1.4pt 0cm 1.4pt;height:13.5pt'>
+  <p class=MsoNormal><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>自修時數</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black .5pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:13.5pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US><o:p></o:p></span></p>
+  </td>
+  <td width=69 valign=top style='width:51.75pt;border:solid black .5pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:13.5pt'>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>ci</span></p>
+  </td>
+ </tr>
+ <tr style='height:138.0pt'>
+  <td width=81 valign=top style='width:60.75pt;border:solid black .5pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:138.0pt'>
+  <p class=MsoNormal><span lang=EN-US>5.5~8.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>8.5~11.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>11.5~14.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>14.5~17.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>17.5~20.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>20.5~23.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>23.5~26.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>26.5~29.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>29.5~32.5</span></p>
+  <p class=MsoNormal><span lang=EN-US>32.5~35.5</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid black .5pt;border-right:solid black .5pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:138.0pt'>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>0</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>1</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>8</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>12</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>24</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>15</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>7</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>2</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>0</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>1</span></p>
+  </td>
+  <td width=69 valign=top style='width:51.75pt;border-top:none;border-left:
+  none;border-bottom:solid black .5pt;border-right:solid black .5pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:138.0pt'>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>0</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>1</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>9</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>21</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>45</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>60</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>67</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>69</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>69</span></p>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span>70</span></p>
+  </td>
+ </tr>
+ <tr style='height:18.75pt'>
+  <td width=81 valign=top style='width:60.75pt;border:solid black .5pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:18.75pt'>
+  <p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+  yes">&nbsp;&nbsp; </span></span><span style='font-family:新細明體;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>計</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid black .5pt;border-right:solid black .5pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:18.75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US><o:p></o:p></span></p>
+  </td>
+  <td width=69 valign=top style='width:51.75pt;border-top:none;border-left:
+  none;border-bottom:solid black .5pt;border-right:solid black .5pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;padding:0cm 1.4pt 0cm 1.4pt;
+  height:18.75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US>&lt;p.f&gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1045" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:1pt;width:424pt;height:108pt;
+ z-index:-9;mso-wrap-edited:f;mso-position-horizontal:left;
+ mso-position-vertical:absolute' wrapcoords="2867 750 153 1650 76 3150 688 3150 191 3750 306 4650 2714 5550 268 9000 38 9450 115 10800 994 13200 1759 15150 1912 15150 153 17250 115 17400 688 17550 76 18300 153 18600 1720 19950 1759 21000 1912 21000 3173 21000 3594 20700 3517 19950 4052 19950 5314 18300 5276 17550 5620 16350 5429 15300 4970 15150 15177 13350 15139 12750 15560 12750 16898 10950 16859 10350 17242 8850 17089 8100 15865 7950 18083 6300 18045 5550 19574 5550 21141 4350 21103 3150 21447 1800 21294 1050 17892 750 2867 750">
+ <v:imagedata src="./B4~4-4.files/image031.wmz" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+ ShapeID="_x0000_s1045" DrawAspect="Content" ObjectID="_1192806327">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=565 height=144
+src="./B4~4-4.files/image032.gif" align=left hspace=12 v:shapes="_x0000_s1045"><![endif]></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1050" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:0;width:13pt;height:18pt;
+ z-index:-7;mso-wrap-edited:f;mso-position-horizontal:left' wrapcoords="10165 4500 1271 14400 1271 17100 11435 17100 17788 17100 16518 4500 10165 4500"
+ o:allowincell="f">
+ <v:imagedata src="./B4~4-4.files/image033.wmz" o:title=""/>
+ <v:textbox style='mso-next-textbox:#_x0000_s1050'/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+ ShapeID="_x0000_s1050" DrawAspect="Content" ObjectID="_1192806328">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=17 height=24
+src="./B4~4-4.files/image034.gif" align=left hspace=12 v:shapes="_x0000_s1050"><![endif]><span
+lang=EN-US>2.</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>由已分組資料求</span><span lang=EN-US>S</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>：將</span><span lang=EN-US>n</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>個資料分</span><span
+lang=EN-US>k</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>組，設各組次數</span><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>密集於組中點</span><span lang=EN-US>xi</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>或均勻散布則：</span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1046" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:9pt;width:311pt;height:211.95pt;
+ z-index:-8;mso-wrap-edited:f;mso-position-horizontal:left' wrapcoords="1926 305 208 1527 104 2290 677 2748 1613 2748 1613 3664 4164 3969 2290 4198 52 4503 52 5419 1353 6411 1666 6411 781 7556 52 7785 52 8090 1353 8854 1353 9617 5153 10075 10774 10075 10774 11296 0 12059 0 13204 5049 13739 312 13891 104 14578 1457 14960 52 15036 208 16105 2707 16257 2654 16868 10774 17402 104 17402 52 18623 4268 18623 364 19616 52 19921 104 21066 6038 21218 6974 21218 8484 21142 8640 21066 9160 20150 9213 19768 6454 18623 10774 17402 13897 17402 19674 16639 19622 16181 20247 16181 20767 15570 20819 14044 19778 13967 10722 13739 2238 12517 10722 11296 10774 10075 15250 9770 17905 9312 17696 8854 20247 8854 21496 8472 21496 6869 18009 6640 10774 6411 14469 6030 14521 4656 13845 4427 10774 3969 11451 3358 11294 2900 16812 2748 18841 2519 18737 1527 18946 305 1926 305"
+ o:allowincell="f">
+ <v:imagedata src="./B4~4-4.files/image035.wmz" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+ ShapeID="_x0000_s1046" DrawAspect="Content" ObjectID="_1192806329">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=415 height=283
+src="./B4~4-4.files/image036.gif" align=left hspace=12 v:shapes="_x0000_s1046"><![endif]></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:細明體'>[3]
+</span><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:
+細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>標準差的運算性質</span><span
+lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+細明體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'>(1)</span><span style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;font-family:細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>若</span><span style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:細明體'> <span lang=EN-US>Sx=0<span
+style="mso-spacerun: yes">&nbsp; </span>(2)S(x+a)=Sx<span style="mso-spacerun:
+yes">&nbsp; </span>(3)S(bx)=lblSx<span style="mso-spacerun: yes">&nbsp;
+</span>(4)S(bx+a)=lblSx<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'>(2)pf:</span><span style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;font-family:細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>設原來資料群</span><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:細明體'>x.</span><span
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>其平均數</span><span
+lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+細明體'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1060" type="#_x0000_t75"
+ style='width:9.75pt;height:17.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image037.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=23
+src="./B4~4-4.files/image038.gif" v:shapes="_x0000_i1060"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1060"
+  DrawAspect="Content" ObjectID="_1192806330">
+ </o:OLEObject>
+</xml><![endif]-->.</span><span style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>標準差</span><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:細明體'>Sx <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1061" type="#_x0000_t75" style='width:11.25pt;height:9.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image039.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=13
+src="./B4~4-4.files/image040.gif" v:shapes="_x0000_i1061"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1061"
+  DrawAspect="Content" ObjectID="_1192806331">
+ </o:OLEObject>
+</xml><![endif]-->x+a</span><span style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>比群資料平均數</span><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:細明體'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1062" type="#_x0000_t75" style='width:9.75pt;height:17.25pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image041.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=23
+src="./B4~4-4.files/image042.gif" v:shapes="_x0000_i1062"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1062"
+  DrawAspect="Content" ObjectID="_1192806332">
+ </o:OLEObject>
+</xml><![endif]--> +a.<o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1052"
+  type="#_x0000_t75" style='position:absolute;margin-left:0;margin-top:0;
+  width:9pt;height:17pt;z-index:8' o:allowincell="f">
+  <v:imagedata src="./B4~4-4.files/image003.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+  ShapeID="_x0000_s1052" DrawAspect="Content" ObjectID="_1192806333">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><img width=12 height=23
+ src="./B4~4-4.files/image043.gif" v:shapes="_x0000_s1052"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+細明體'>S(x+a)= <sub><!--[if gte vml 1]><v:shape id="_x0000_i1063" type="#_x0000_t75"
+ style='width:119.25pt;height:38.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image044.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=159 height=51
+src="./B4~4-4.files/image045.gif" v:shapes="_x0000_i1063"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1063"
+  DrawAspect="Content" ObjectID="_1192806334">
+ </o:OLEObject>
+</xml><![endif]-->=<sub><!--[if gte vml 1]><v:shape id="_x0000_i1064" type="#_x0000_t75"
+ style='width:68.25pt;height:38.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image046.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=91 height=51
+src="./B4~4-4.files/image047.gif" v:shapes="_x0000_i1064"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1064"
+  DrawAspect="Content" ObjectID="_1192806335">
+ </o:OLEObject>
+</xml><![endif]-->=Sx<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'>pf(1)<span style="mso-spacerun: yes">&nbsp;
+</span>Sx=<sub><!--[if gte vml 1]><v:shape id="_x0000_i1065" type="#_x0000_t75"
+ style='width:71.25pt;height:38.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image048.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=95 height=51
+src="./B4~4-4.files/image049.gif" v:shapes="_x0000_i1065"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1065"
+  DrawAspect="Content" ObjectID="_1192806336">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp; </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1066" type="#_x0000_t75" style='width:11.25pt;height:9.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image050.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=13
+src="./B4~4-4.files/image051.gif" v:shapes="_x0000_i1066"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1066"
+  DrawAspect="Content" ObjectID="_1192806337">
+ </o:OLEObject>
+</xml><![endif]-->Sx=0<sub><!--[if gte vml 1]><v:shape id="_x0000_i1067"
+ type="#_x0000_t75" style='width:15pt;height:12pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image052.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=16
+src="./B4~4-4.files/image053.gif" v:shapes="_x0000_i1067"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1067"
+  DrawAspect="Content" ObjectID="_1192806338">
+ </o:OLEObject>
+</xml><![endif]-->xi-<sub><!--[if gte vml 1]><v:shape id="_x0000_i1068" type="#_x0000_t75"
+ style='width:9.75pt;height:17.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image054.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=23
+src="./B4~4-4.files/image055.gif" v:shapes="_x0000_i1068"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1068"
+  DrawAspect="Content" ObjectID="_1192806339">
+ </o:OLEObject>
+</xml><![endif]-->=0<sub><!--[if gte vml 1]><v:shape id="_x0000_i1069" type="#_x0000_t75"
+ style='width:15pt;height:12pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image052.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=16
+src="./B4~4-4.files/image056.gif" v:shapes="_x0000_i1069"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1069"
+  DrawAspect="Content" ObjectID="_1192806340">
+ </o:OLEObject>
+</xml><![endif]-->xi=<sub><!--[if gte vml 1]><v:shape id="_x0000_i1070" type="#_x0000_t75"
+ style='width:9.75pt;height:17.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image057.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=23
+src="./B4~4-4.files/image058.gif" v:shapes="_x0000_i1070"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1070"
+  DrawAspect="Content" ObjectID="_1192806341">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'>pf(3)<span style="mso-spacerun: yes">&nbsp;
+</span>bx</span><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>此資料平均數</span><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:細明體'>?<span
+style="mso-spacerun: yes">&nbsp; </span><sub><!--[if gte vml 1]><v:shape id="_x0000_i1071"
+ type="#_x0000_t75" style='width:11.25pt;height:9.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image050.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=13
+src="./B4~4-4.files/image059.gif" v:shapes="_x0000_i1071"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1071"
+  DrawAspect="Content" ObjectID="_1192806342">
+ </o:OLEObject>
+</xml><![endif]--><sub><!--[if gte vml 1]><v:shape id="_x0000_i1072" type="#_x0000_t75"
+ style='width:60.75pt;height:33.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image060.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=81 height=45
+src="./B4~4-4.files/image061.gif" v:shapes="_x0000_i1072"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1072"
+  DrawAspect="Content" ObjectID="_1192806343">
+ </o:OLEObject>
+</xml><![endif]--><sub><!--[if gte vml 1]><v:shape id="_x0000_i1073" type="#_x0000_t75"
+ style='width:80.25pt;height:33.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image062.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=107 height=45
+src="./B4~4-4.files/image063.gif" v:shapes="_x0000_i1073"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1073"
+  DrawAspect="Content" ObjectID="_1192806344">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>=<sub><!--[if gte vml 1]><v:shape id="_x0000_i1074" type="#_x0000_t75"
+ style='width:69pt;height:33.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image064.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=92 height=45
+src="./B4~4-4.files/image065.gif" v:shapes="_x0000_i1074"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1074"
+  DrawAspect="Content" ObjectID="_1192806345">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1075"
+ type="#_x0000_t75" style='width:114.75pt;height:105.75pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image066.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=153 height=141
+src="./B4~4-4.files/image067.gif" v:shapes="_x0000_i1075"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1075"
+  DrawAspect="Content" ObjectID="_1192806346">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>得</span><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'>bx</span><span style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;font-family:細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>此群資料平均數</span><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:細明體'>b<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1076" type="#_x0000_t75" style='width:9.75pt;height:17.25pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image068.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=23
+src="./B4~4-4.files/image069.gif" v:shapes="_x0000_i1076"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1076"
+  DrawAspect="Content" ObjectID="_1192806347">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:細明體'>S(bx)= <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1077" type="#_x0000_t75" style='width:81.75pt;height:38.25pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image070.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=109 height=51
+src="./B4~4-4.files/image071.gif" v:shapes="_x0000_i1077"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1077"
+  DrawAspect="Content" ObjectID="_1192806348">
+ </o:OLEObject>
+</xml><![endif]-->=<sub><!--[if gte vml 1]><v:shape id="_x0000_i1078" type="#_x0000_t75"
+ style='width:84.75pt;height:38.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image072.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=113 height=51
+src="./B4~4-4.files/image073.gif" v:shapes="_x0000_i1078"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1078"
+  DrawAspect="Content" ObjectID="_1192806349">
+ </o:OLEObject>
+</xml><![endif]-->=lbl<sub><!--[if gte vml 1]><v:shape id="_x0000_i1079"
+ type="#_x0000_t75" style='width:71.25pt;height:38.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B4~4-4.files/image074.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=95 height=51
+src="./B4~4-4.files/image075.gif" v:shapes="_x0000_i1079"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1079"
+  DrawAspect="Content" ObjectID="_1192806350">
+ </o:OLEObject>
+</xml><![endif]-->=lblSx</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'><span
+style="mso-spacerun: yes">&nbsp;</span></span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
